@@ -1,108 +1,94 @@
-## Supervised Learning INT395 Hands-on Repository
+## Supervised Learning (INT395) — Hands-on Repository
 
-Welcome to the **supervisedLearning** repository, a hands-on resource for **Supervised Learning (INT395)**. This repository contains practical implementations and explorations of fundamental and advanced supervised machine learning concepts, algorithms, and techniques.
+Welcome! This repository is a hands-on resource for **Supervised Learning**, originally built while working through the INT395 course. It contains course slides, a structured lesson curriculum, dozens of practice notebooks, and a small end-to-end capstone project.
 
-This resource is designed to complement the course material by providing practical code examples for data manipulation, model building, and evaluation.
+It's organized so that **someone new to ML can start at the top and work down**, without needing any prior context about how the material was originally collected.
 
 ---
 
 ## 📚 Table of Contents
 
-* [Overview](#-overview)
-* [Practical List](#-practical-list)
-* [Textbooks](#-textbooks)
-* [References](#-references)
+* [Repository Map](#-repository-map)
+* [Suggested Learning Path](#-suggested-learning-path)
 * [Setup and Usage](#-setup-and-usage)
+* [Textbooks & References](#-textbooks--references)
 
 ---
 
-## 💡 Overview
+## 🗺️ Repository Map
 
-This repository focuses on key areas of supervised learning, including:
+| Folder | What's in it |
+|--------|--------------|
+| [`01-Course-Notes-INT395/`](01-Course-Notes-INT395/) | Official INT395 lecture slides + matching practical notebooks |
+| [`02-Lessons/`](02-Lessons/) | A full, ordered data-science → ML curriculum (13 lessons, slides + notebooks) |
+| [`03-Practice/`](03-Practice/) | ~20 practice notebooks, grouped by topic (regression, classification, ensembles, time series, etc.) |
+| [`04-Capstone-Project/`](04-Capstone-Project/) | "Hospital Bed Optimizer" — a full ML pipeline + Streamlit app + written research report |
 
-* **Data Preprocessing and Visualization** 📊: Using libraries like **Pandas** and **Seaborn** to clean, prepare, and understand data.
-* **Feature Engineering and Selection** ⚙️: Techniques for creating meaningful features and reducing dimensionality (**PCA**).
-* **Model Implementation** 💻: Building and applying various models such as **Logistic Regression**, **Decision Trees**, **k-NN**, **SVM**, **Naïve Bayes**, and **Ensemble Methods** (Random Forest, AdaBoost, Gradient Boosting).
-* **Model Evaluation and Tuning** 📈: Assessing model performance using metrics (Precision, Recall, F1-score, ROC-AUC) and optimizing hyperparameters (**Grid Search**, **Random Search**).
-* **Regression** 📉: Implementing different regression models (Linear, Polynomial, Ridge) and **Time Series Forecasting** (ARIMA/SARIMA).
-* **Deployment** 🚀: Utilizing **Pickle** and **Streamlit** for basic model deployment.
-
----
-
-## 📝 Practical List
-
-The following practical exercises are included in this repository:
-
-1.  Write a program to explore and visualize a dataset using **Pandas** and **Seaborn**.
-2.  Write a program to preprocess data by handling **missing values, outliers, scaling, and encoding**.
-3.  Write a program to perform **feature engineering** and **feature selection** using statistical methods and **PCA**.
-4.  Write a program to split data into training and testing sets and apply **k-fold cross-validation**.
-5.  Write a program to implement **logistic regression** for binary classification.
-6.  Write a program to build a **decision tree classifier** and evaluate it using a **confusion matrix**.
-7.  Write a program to compare the performance of **k-NN, SVM, and Naïve Bayes** classifiers.
-8.  Write a program to evaluate a classification model using **precision, recall, F1-score, and ROC-AUC**.
-9.  Write a program to implement **Random Forest classification** using **Bagging** technique.
-10. Write a program to apply **boosting algorithms** like **AdaBoost and Gradient Boosting** for classification.
-11. Write a program to **tune hyperparameters** using **Grid Search and Random Search** methods.
-12. Write a program to implement **linear, polynomial, and ridge regression** models for prediction.
-13. Write a program to forecast **time series data** using **ARIMA or SARIMA** models.
-14. Write a program to **deploy a machine learning model** using **Pickle and Streamlit**.
+Each folder above has its own `README.md` with more detail and a table of contents.
 
 ---
 
-## 📖 Textbooks
+## 🧭 Suggested Learning Path
 
-The primary textbook for reference:
+If you're learning this material for the first time, go in this order:
 
-1.  **MACHINE LEARNING-I** by **CHANDRA S.S, VINOD**, PHI Learning
+1. **Foundations** — [`02-Lessons/Lesson_01`](02-Lessons/Lesson_01_Introduction_to_Data_Science/) through [`Lesson_07`](02-Lessons/Lesson_07_Feature_Engineering/): data science basics, Pandas, visualization, math/stats, probability, data wrangling, and feature engineering.
+2. **Core ML** — [`02-Lessons/Lesson_08`](02-Lessons/Lesson_08_Introduction_to_Machine_Learning/) through [`Lesson_13`](02-Lessons/Lesson_13_Model_deployment/): supervised learning (regression & classification), ensembles, time series, and deployment.
+3. **Practice** — for each topic you just learned, find the matching folder in [`03-Practice/`](03-Practice/) and actually run the notebook yourself, end to end.
+4. **Reference implementations** — [`03-Practice/10-POC-Algorithms/`](03-Practice/10-POC-Algorithms/) has clean, tuned, single-purpose notebooks for Naive Bayes, Decision Trees, SVM, Logistic Regression, and KNN — good for revision.
+5. **Put it together** — [`04-Capstone-Project/`](04-Capstone-Project/) shows everything combined into a real pipeline with a UI, written up as a research report.
 
----
+This covers, in practical terms:
 
-## 📎 References
-
-For supplementary reading and deeper understanding:
-
-1.  **MACHINE LEARNING** by **ETHEM ALPAYDIN**, MIT Press
-
-### Data and Supplementary Material
-
-Access the datasets, lecture notes, and other supplementary files here:
-
-* **Google Drive Link:** [LOG NOTES->](https://drive.google.com/drive/folders/1BAqJLdMl_oR1eNUwX1EiV_7qYiT7hXcs?usp=drive_link)
-
-***
+* **Data Preprocessing & Visualization** 📊 — Pandas, Seaborn, handling missing values/outliers/scaling/encoding.
+* **Feature Engineering & Selection** ⚙️ — including dimensionality reduction with PCA.
+* **Model Implementation** 💻 — Logistic Regression, Decision Trees, k-NN, SVM, Naive Bayes, Ensembles (Random Forest, AdaBoost, Gradient Boosting, Voting, Stacking).
+* **Model Evaluation & Tuning** 📈 — Precision/Recall/F1/ROC-AUC, Grid Search, Random Search.
+* **Regression** 📉 — Linear, Polynomial, Ridge, and ARIMA/SARIMA time series forecasting.
+* **Deployment** 🚀 — packaging a model with Pickle/joblib and serving it with Streamlit.
 
 ---
 
 ## 🛠️ Setup and Usage
 
-To run the practicals in this repository, you will typically need the following libraries. It's recommended to use a virtual environment.
-
 ### Prerequisites
 
-* Python (3.x recommended)
-* `pip` (Python package installer)
+* Python 3.x
+* `pip`
 
 ### Installation
 
-1.  **Clone the repository:**
-    ```bash
-    git clone [https://github.com/alensomaxx/supervisedLearning.git](https://github.com/alensomaxx/supervisedLearning.git)
-    cd supervisedLearning
-    ```
+```bash
+git clone https://github.com/alensomaxx/supervisedLearning.git
+cd supervisedLearning
 
-2.  **Install the necessary packages:**
-    (A `requirements.txt` file is usually included in a production repository, but based on the practicals, you'll need the following):
-    ```bash
-    pip install pandas numpy scikit-learn matplotlib seaborn statsmodels streamlit
-    ```
+python -m venv venv
+source venv/bin/activate      # Linux/Mac
+venv\Scripts\activate         # Windows
 
-3.  **Run the individual practicals:**
-    Navigate to the directory of the practical you wish to run and execute the Python script.
+pip install pandas numpy scikit-learn matplotlib seaborn statsmodels streamlit jupyter
+jupyter notebook
+```
 
-    *Example:*
-    ```bash
-    python practical_1_data_viz.py
-    ```
+Then open any notebook under `02-Lessons/`, `03-Practice/`, or `01-Course-Notes-INT395/Code/` — each one only depends on files in its own folder, so you can `cd` into any single topic folder and run it standalone.
+
+To run the capstone project's interactive dashboard:
+
+```bash
+cd 04-Capstone-Project
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+---
+
+## 📖 Textbooks & References
+
+1. **MACHINE LEARNING-I** by **CHANDRA S.S, VINOD**, PHI Learning (primary textbook)
+2. **MACHINE LEARNING** by **ETHEM ALPAYDIN**, MIT Press (supplementary)
+
+Datasets, lecture notes, and other supplementary files: [Google Drive](https://drive.google.com/drive/folders/1BAqJLdMl_oR1eNUwX1EiV_7qYiT7hXcs?usp=drive_link)
+
+---
 
 Happy Learning! 🚀

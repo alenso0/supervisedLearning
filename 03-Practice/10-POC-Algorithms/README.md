@@ -8,15 +8,15 @@ The main goal is to provide **clean, well-documented, and fully reproducible** e
 
 ### 🎯 Proof-of-Concept (POC) Algorithms
 
-All POCs are located in the [`Practice/POC/`](Practice/POC/) directory. Each algorithm has its own dedicated, fully commented Jupyter Notebook.
+All POCs are located in the [`03-Practice/10-POC-Algorithms/`](03-Practice/10-POC-Algorithms/) directory. Each algorithm has its own dedicated, fully commented Jupyter Notebook.
 
 | Algorithm                  | Notebook                          | Status                  | Focus                                      |
 |----------------------------|-----------------------------------|-------------------------|--------------------------------------------|
-| Naive Bayes                | [`NaiveBayesAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/Practice/POC/NaiveBayesAlgo.ipynb)           | ✅ POC Complete        | Implementation + Initial Evaluation         |
-| Decision Trees             | [`DecisionTreesAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/Practice/POC/DecisionTressAlgo.ipynb)       | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
-| Support Vector Machines    | [`SVMAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/Practice/POC/SVMAlgo.ipynb)                   | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
-| Logistic Regression        | [`LogisticRegressionAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/Practice/POC/LogisticRegressionAlgo.ipynb) | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
-| K-Nearest Neighbors (KNN)  | [`KNNAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/Practice/POC/KNNAlgo.ipynb)                 | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
+| Naive Bayes                | [`NaiveBayesAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/03-Practice/10-POC-Algorithms/NaiveBayesAlgo.ipynb)           | ✅ POC Complete        | Implementation + Initial Evaluation         |
+| Decision Trees             | [`DecisionTreesAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/03-Practice/10-POC-Algorithms/DecisionTressAlgo.ipynb)       | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
+| Support Vector Machines    | [`SVMAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/03-Practice/10-POC-Algorithms/SVMAlgo.ipynb)                   | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
+| Logistic Regression        | [`LogisticRegressionAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/03-Practice/10-POC-Algorithms/LogisticRegressionAlgo.ipynb) | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
+| K-Nearest Neighbors (KNN)  | [`KNNAlgo.ipynb`](https://github.com/alensomaxx/supervisedLearning/blob/main/03-Practice/10-POC-Algorithms/KNNAlgo.ipynb)                 | ✅ Tuned               | Implementation + Hyperparameter Tuning     |
 
 > All models are trained and evaluated on the **Wisconsin Breast Cancer Dataset** (`Breast_cancer_dataset.csv`) — a classic binary classification benchmark.
 
@@ -42,7 +42,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn jupyter
 # 4. Launch Jupyter Notebook
 jupyter notebook
 ```
-Then navigate to `Practice/POC/` and open any notebook (e.g., `KNNAlgo.ipynb`) to explore, run, and modify!
+Then navigate to `03-Practice/10-POC-Algorithms/` and open any notebook (e.g., `KNNAlgo.ipynb`) to explore, run, and modify!
 
 ---
 
